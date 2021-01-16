@@ -64,7 +64,7 @@ app.post("/ekle", function(req, res){
   );
   gorev.save(function(err){
     res.redirect("/");
-  });
+  }); 
 });
 app.post("/sil", function(req, res){
     var dokumanID = req.body.id;
